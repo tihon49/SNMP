@@ -18,7 +18,7 @@
 4. Перезагрузить snmpd.service:
 
    ```bash
-   sudo systemctl restart snmpd.sercive
+   sudo systemctl restart snmpd.service
    ```
 5. Запустить файл snmp_agent.py от root пользователя:
 
