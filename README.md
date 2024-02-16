@@ -1,4 +1,4 @@
-# Настройка SNMP и своих регистрация своих OID средствами python библиотеки pyagentx3
+# Настройка SNMP и регистрация своих OID средствами python библиотеки pyagentx3
 
 1. Установить snmp:
 
@@ -41,12 +41,12 @@
 # заполняем его следующим образом:
 YOUR-MIB-NAME DEFINITIONS ::= BEGIN
 
-AERODISK OBJECT IDENTIFIER ::= { iso(1) org(3) dod(6) internet(1) private(4) enterprises(1) 54641 }
+MYIDENTIFIER OBJECT IDENTIFIER ::= { iso(1) org(3) dod(6) internet(1) private(4) enterprises(1) 54641 }
 
-cpu   OBJECT IDENTIFIER ::= {AERODISK 50}
-network   OBJECT IDENTIFIER ::= {AERODISK 51}
-disks   OBJECT IDENTIFIER ::= {AERODISK 52}
-ram   OBJECT IDENTIFIER ::= {AERODISK 53}
+cpu   OBJECT IDENTIFIER ::= {MYIDENTIFIER 50}
+network   OBJECT IDENTIFIER ::= {MYIDENTIFIER 51}
+disks   OBJECT IDENTIFIER ::= {MYIDENTIFIER 52}
+ram   OBJECT IDENTIFIER ::= {MYIDENTIFIER 53}
 
 -- CPU
 CoresCount OBJECT-TYPE
